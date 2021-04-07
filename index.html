@@ -31,6 +31,11 @@
         </li>
     </ul>
 </nav>
+<button type="button" class="burger-btn" data-menu-button>
+    <svg class="burger-btn__icon">
+        <use href=" ./images/svgsprat/symbol.svg#burger"></use>
+    </svg>
+</button>
 <ul class="contact-list list"> 
     <li class="contact-list__item">
         <a class="contact-list__link link" href="mailto:info@devstudio.com" lang="en">
@@ -50,19 +55,64 @@
     </li>
    
 </ul>
+<div class="mobile-menu" data-menu>
+    <button type="button" class="mobile-menu__close-btn" data-menu-close>
+        <svg class="mobile-menu__close-icon">
+            <use href=" ./images/svgsprat/symbol.svg#icon-close"></use>
+        </svg>
+    </button>
+    <ul class="mobile-menu__list list">
+        <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link link current__link">Студия</a>
+        </li>
+        <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link link">Портфолио</a>
+        </li>
+        <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link link">Контакты</a>
+        </li>
+    </ul>
+    <div class="mobile-contact">
+    <ul class="mobile-contact__list list">
+        <li class="mobile-contact__item">
+            <a href="tel:+380961111111" class="mobile-contact__tel link">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-contact__item">
+            <a  href="mailto:info@devstudio.com" class="mobile-contact__mail link">info@devstudio.com</a>
+        </li>
+    </ul>
+    </div>
+    <div class="mobile-social">
+    <ul class="mobile-social__list list">
+        <li class="mobile-social__item">
+            <a href="" class="mobile-social__link link">Instagram</a>
+        </li>
+        <li class="mobile-social__item">
+            <a href="" class="mobile-social__link link">Twitter</a>
+        </li>
+        <li class="mobile-social__item">
+            <a href="" class="mobile-social__link link">Facebook</a>
+        </li>
+        <li class="mobile-social__item">
+            <a href="" class="mobile-social__link link">LinkedIn</a>
+        </li>
+        </ul>
+
+    </div>
+</div>
     </div>
     
 </header>
-<main>
+<!-- <main> -->
 <!--Hero-->
-<section class="hero overlay">
+<!-- <section class="hero overlay">
     <div class="container">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button class="modal__btn" type="button" data-modal-open>Заказать услугу</button>
     </div>
-</section>
+</section> -->
 <!--Features-->
-<section class="features">
+<!-- <section class="features">
     <div class="container">
     <h2 class="visually-hidden">Особенности </h2>
         <ul class="features_lists list">
@@ -73,9 +123,9 @@
                 </svg>
             </div>    
             <h3 class="features_lists__title">Внимание к деталям</h3>
-            <p class="features_lists__desc">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+            <p class="features_lists__desc">Идейные соображения, а также начало повседневной работы по формированию позиции.</p> -->
 
-        </li>
+        <!-- </li>
         <li class="features_lists__item">
             <div class="features_lists__card">
                 <svg class="features_lists__icon">
@@ -105,9 +155,9 @@
         </li>
     </ul>
     </div>
-</section>
+</section> -->
 <!--what are we doing-->
-<section class="doing ">
+<!-- <section class="doing ">
     <div class="container">
     <h2 class="title">Чем мы занимаемся</h2>
     <ul class="doing-lists list">
@@ -137,9 +187,9 @@
         </li>
     </ul>
     </div>
-</section> 
+</section>  -->
 <!--Our team--> 
-<section class="team">
+<!-- <section class="team">
    <div class="container">
     <h2 class="title">Наша команда</h2>
     <ul class="team-lists list">
@@ -293,9 +343,9 @@
         </li>
     </ul>
     </div>
-</section> 
+</section>  -->
 <!--Our clients-->
-<section class="clients">
+<!-- <section class="clients">
     <div class="container">
         <h2 class="title">Постоянные клиенты</h2>
         <ul class="clients-list list">
@@ -352,8 +402,8 @@
     <a class="logo logo_theme-dark link" href="" lang="en"> <span class="logo__accent-text">Web</span>Studio</a>
     <address class="address">
     <ul class="contact list">
-        <li class="contact__item">
-            <a class="contact__link link" href="https://goo.gl/maps/p48vAZZy5zVXsnr66" target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26 </a>
+        <li class="contact__item"> -->
+            <!-- <a class="contact__link link" href="https://goo.gl/maps/p48vAZZy5zVXsnr66" target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26 </a>
         </li>
         <li class="contact__item">
             <a class="contact__footer-link link" href="mailto:info@example.com">info@example.com</a>
@@ -396,8 +446,8 @@
             </li>
         </ul>
     </div>
-    <div class="subscribe">
-        <b class="subscribe__text">Подпишитесь на рассылку</b>
+    <div class="subscribe"> -->
+        <!-- <b class="subscribe__text">Подпишитесь на рассылку</b>
         <form class="subscribe-form" autocomplete="off">
             <input class="subscribe__mail" type="email" id="subs-mail" name="mail" placeholder="E-mail" >
             <button class="subscribe__btn" type="submit">Подписаться
@@ -454,7 +504,8 @@
                
         </form>
     </div>
-</div>  
+<!-- </div>   -->
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>
