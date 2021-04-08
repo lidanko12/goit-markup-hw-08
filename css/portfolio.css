@@ -64,6 +64,8 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -84,12 +86,18 @@ body {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+  outline: 2px red solid;
 }
 
 .header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.hero .container {
+  padding: 118px 60px;
+  text-align: center;
 }
 
 @media screen and (min-width: 480px) {
@@ -106,11 +114,20 @@ body {
   .about .container {
     display: flex;
   }
+  .hero .container {
+    padding: 118px 204px;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+  }
+  .hero .container {
+    padding: 200px 0px;
+    text-align: center;
+    max-width: 696px;
   }
 }
 

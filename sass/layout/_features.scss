@@ -1,17 +1,62 @@
-.features {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+// .features {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+// }
+// .features_lists {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   margin-left: -30px;
+//   & :first-child {
+//     margin-left: 0;
+//   }
+// }
+
+// .features_lists__item {
+//   flex-basis: calc(100% / 4 - 30px);
+//   margin-left: 30px;
+// }
+
+// .features_lists__desc {
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 1.7;
+//   letter-spacing: 0.03em;
+//   color: var(--tel-link-color);
+// }
+// @media screen and (min-width: 480px) {
 .features_lists {
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
-  margin-left: -30px;
-  & :first-child {
-    margin-left: 0;
+  margin-top: 60px;
+  // margin-left: -30px;
+  // & :first-child {
+  //   margin-left: 0;
+  // }
+}
+.features_lists__item {
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0px;
   }
 }
 
+.features_lists__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  max-width: 100%;
+  height: auto;
+  padding: 25px 190px;
+  background-color: var(--team-background);
+}
+
+.features_lists__icon {
+  width: 70px;
+  height: 70px;
+}
 .features_lists__title {
   margin-bottom: 10px;
   font-weight: 700;
@@ -20,13 +65,8 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--nav-color);
+  text-align: center;
 }
-
-.features_lists__item {
-  flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
-}
-
 .features_lists__desc {
   font-weight: 400;
   font-size: 14px;
@@ -34,17 +74,40 @@
   letter-spacing: 0.03em;
   color: var(--tel-link-color);
 }
-.features_lists__card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-  width: 270px;
-  height: 120px;
-  background-color: var(--team-background);
-}
+// }
 
-.features_lists__icon {
-  width: 70px;
-  height: 70px;
+@media screen and (min-width: 768px) {
+  .features_lists {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -30px;
+  }
+
+  .features_lists__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+  .features_lists__card {
+    padding: 25px 142px;
+  }
+  .features_lists__desc {
+    max-width: 350px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .features_lists__item {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+  }
+
+  .features_lists__card {
+    padding: 25px 100px;
+  }
 }
