@@ -738,7 +738,7 @@ body {
 .features_lists {
   display: block;
   justify-content: center;
-  margin-top: 60px;
+  padding-top: 60px;
 }
 
 .features_lists__item {
@@ -807,6 +807,9 @@ body {
   .features {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+  .features_lists {
+    padding-top: 0;
   }
   .features_lists__item {
     flex-basis: calc(100% / 4 - 30px);

@@ -29,7 +29,8 @@
   display: block;
   // align-items: center;
   justify-content: center;
-  margin-top: 60px;
+  padding-top: 60px;
+  // margin-top: 60px;
   // margin-left: -30px;
   // & :first-child {
   //   margin-left: 0;
@@ -101,7 +102,9 @@
     padding-top: 94px;
     padding-bottom: 94px;
   }
-
+  .features_lists {
+    padding-top: 0;
+  }
   .features_lists__item {
     flex-basis: calc(100% / 4 - 30px);
     margin-left: 30px;
