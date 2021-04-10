@@ -1,3 +1,6 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .menu {
   display: none;
 }
@@ -264,4 +267,7 @@
     width: 10px;
     height: 16px;
   }
+}
+.current__link {
+  color: var(--second-color);
 }
