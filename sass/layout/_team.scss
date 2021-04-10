@@ -76,6 +76,7 @@
   .team {
     background-color: var(--team-background);
     padding-top: 60px;
+    padding-bottom: 60px;
   }
   .team-lists {
     display: block;
@@ -87,14 +88,11 @@
   .team-lists__item {
     margin-bottom: 30px;
     &:last-child {
-      margin-bottom: 0;
+      margin-bottom: 0px;
     }
   }
 }
 @media screen and (min-width: 768px) {
-  .team {
-    padding-bottom: 60px;
-  }
   .team-lists {
     display: flex;
     flex-wrap: wrap;
@@ -105,5 +103,15 @@
   .team-lists__item {
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .team-lists__item {
+    flex-basis: calc(100% / 4 - 30px);
   }
 }

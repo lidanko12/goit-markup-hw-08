@@ -2,6 +2,7 @@
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+  margin: 0 auto;
 
   .header & {
     display: flex;
@@ -17,7 +18,6 @@
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    margin: 0 auto;
   }
 }
 
