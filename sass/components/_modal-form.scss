@@ -1,20 +1,19 @@
 .modal-title {
+  display: inline-block;
   font-weight: 700;
   line-height: 1.15;
   font-size: 20px;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: var(--nav-color);
-  margin-top: 40px;
   margin-bottom: 12px;
 }
-.modal-form {
-  padding-left: 40px;
-  padding-right: 40px;
-  margin-left: auto;
-  margin-right: auto;
-}
+// .modal-form {
+//   padding-left: 40px;
+//   padding-right: 40px;
+//   // margin-left: auto;
+//   // margin-right: auto;
+// }
 .modal-form__content {
   display: flex;
   position: relative;
