@@ -20,7 +20,7 @@
   transform: scale(0.8) translate(-50%, -50%);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .backdrop {
     padding: 93px 15px;
   }
