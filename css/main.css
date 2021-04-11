@@ -256,22 +256,15 @@ body {
 }
 
 .modal-window {
+  position: relative;
   background-color: var(--main-color);
   padding: 40px;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1.4);
+  border-radius: 4px;
+  background-color: var(--main-color);
+  max-width: 450px;
+  margin: 0 auto;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform var(--transition-duration) var(--transition-function);
-}
-
-@media screen and (max-width: 1199px) {
-  .modal-window {
-    max-width: 450px;
-    min-height: 609px;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -279,7 +272,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 528px;
+    max-width: 528px;
     height: 581px;
     transform: translate(-50%, -50%) scale(1);
   }
