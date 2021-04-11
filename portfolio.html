@@ -15,8 +15,8 @@
     
 </head>
 <body>
-<header class="header">
-    <div class="container">
+<header class="page-header">
+    <div class="container page-header__container">
 <nav class="nav">
     <a class="logo logo_theme-light link" href="./index.html" lang="en"> <span class="logo__accent-text">Web</span>Studio</a>
     <ul class="menu list">
@@ -129,9 +129,10 @@
                 <a class="portfolio-lists__link link" href="#">
                     <div class="card-thumb">
                         <picture>
-                            <source media="(min-width:320px)" 
-                            srcset="./images/portfolio/img.webp 1x, ./images/portfolio/img@2x.webp 2x"
-                                type="image/wepb">
+                    
+                            <source media="(min-width:320px)" type="image/wepb"  
+                            srcset="./images/portfolio/img.webp 1x, 
+                            ./images/portfolio/img@2x.webp 2x">
                             <source media="(min-width:320px)" 
                             srcset="./images/portfolio/img.jpg 1x, ./images/team/img@2x.jpg 2x">
                             <source media="(min-width:768px)" 
@@ -142,8 +143,10 @@
                             <source media="(min-width:1200px)" 
                             srcset="./images/portfolio/imgdesc.webp 1x, ./images/portfolio/imgdesc@2x.webp 2x"
                                 type="image/wepb">
-                            <source media="(min-width:1200px)" 
-                            srcset="./images/portfolio/imgdesc.jpg 1x, ./images/portfolio/imgdesc@2x.jpg 2x">
+                            <source media="(min-width:1200px)"
+                            srcset="./images/portfolio/imgdesc.jpg 1x, ./images/portfolio/imgdesc@2x.jpg 2x"
+                                >
+                            
                             <img src="./images/portfolio/img.jpg" 
                             alt="Ноутбук с карточками на екране">
                         </picture>
@@ -452,59 +455,65 @@
     </section>
     </main>
 <footer class="footer">
-    <div class="container footer-flex">
-        <div>
-            <a class="logo logo_theme-dark link" href="" lang="en"> <span class="logo__accent-text">Web</span>Studio</a>
-            <address class="address">
-                <ul class="contact list">
-                    <li class="contact__item">
-                        <a class="contact__link link" href="https://goo.gl/maps/p48vAZZy5zVXsnr66" target="_blank"
-                            rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26 </a>
+    <div class="container footer__conteiner">
+        <div class="footer-info">
+            <div class="footer-content">
+
+                <a class="logo logo_theme-dark link" href="" lang="en"> <span
+                        class="logo__accent-text">Web</span>Studio</a>
+                <address class="address">
+                    <ul class="contact list">
+                        <li class="address__item">
+                            <a class="address__link link" href="https://goo.gl/maps/p48vAZZy5zVXsnr66" target="_blank"
+                                rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26 </a>
+                        </li>
+                        <li class="address__item">
+                            <a class="address__footer-link link" href="mailto:info@example.com">info@example.com</a>
+                        </li>
+                        <li class="address__item">
+                            <a class="address__footer-link link" href="tel:+380991111111">+38 099 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="joined">
+                <b class="join-us">присоединяйтесь</b>
+                <ul class="soc-list list">
+                    <li class="soc-list__item">
+                        <a class="soc-list__link link" href="">
+                            <svg class="social-list__icon">
+                                <use href="./images/svgsprat/symbol.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li class="contact__item">
-                        <a class="contact__footer-link link" href="mailto:info@example.com">info@example.com</a>
+                    <li class="soc-list__item">
+                        <a class="soc-list__link link" href="">
+                            <svg class="social-list__icon">
+                                <use href="./images/svgsprat/symbol.svg#icon-twitter1"></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li class="contact__item">
-                        <a class="contact__footer-link link" href="tel:+380991111111">+38 099 111 11 11</a>
+                    <li class="soc-list__item">
+                        <a class="soc-list__link link" href="">
+                            <svg class="social-list__icon">
+                                <use href="./images/svgsprat/symbol.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="soc-list__item">
+                        <a class="soc-list__link link" href="">
+                            <svg class="social-list__icon">
+                                <use href="./images/svgsprat/symbol.svg#icon-linkedin1"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
-            </address>
+            </div>
         </div>
-        <div class="joined">
-            <b class="join-us">присоединяйтесь</b>
-            <ul class="soc-list list">
-                <li class="soc-list__item">
-                    <a class="soc-list__link link" href="">
-                        <svg class="social-list__icon">
-                            <use href="./images/svgsprat/symbol.svg#icon-instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="soc-list__item">
-                    <a class="soc-list__link link" href="">
-                        <svg class="social-list__icon">
-                            <use href="./images/svgsprat/symbol.svg#icon-twitter1"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="soc-list__item">
-                    <a class="soc-list__link link" href="">
-                        <svg class="social-list__icon">
-                            <use href="./images/svgsprat/symbol.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="soc-list__item">
-                    <a class="soc-list__link link" href="">
-                        <svg class="social-list__icon">
-                            <use href="./images/svgsprat/symbol.svg#icon-linkedin1"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
+
         <div class="subscribe">
             <b class="subscribe__text">Подпишитесь на рассылку</b>
+
             <form class="subscribe-form" autocomplete="off">
                 <input class="subscribe__mail" type="email" id="subs-mail" name="mail" placeholder="E-mail">
                 <button class="subscribe__btn" type="submit">Подписаться
@@ -513,6 +522,8 @@
                     </svg>
                 </button>
             </form>
+
+
         </div>
     </div>
 </footer>
