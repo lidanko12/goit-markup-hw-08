@@ -599,9 +599,14 @@
                 <label class="modal-form__label" for="comment" id="user-comment">Коментарий</label>
                 <textarea class="modal-form__comment" name="comment" id="comment" placeholder="Введите текст"></textarea>
             </span>
+                    <label class="modal-form__checkbox">
                     <input class="modal-form__modal-checkbox visually-hidden" type="checkbox" name="agree" id="agree">
-                    <label class="modal-form__title" for="agree">
-                    Соглашаюсь с рассылкой и принимаю&nbsp;
+                    <svg class="modal-form__checkbox-icon" width="16" height="15">
+                        <use href="./images/svgsprat/symbol.svg#icon-check"></use>
+                    </svg>
+                    <span>Соглашаюсь с рассылкой и принимаю&nbsp;
+
+                    </span>
                     <a class="modal-form__link" href="#">Условия договора</a>
                 </label>
                 <button type="submit" class="modal-form__btn">Отправить</button>
